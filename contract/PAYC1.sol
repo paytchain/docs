@@ -288,7 +288,7 @@ contract PAYChain is ERC20, ERC20Detailed {
     string private constant NAME = "PAYChain";//你的代币名称
     string private constant SYMBOL = "PAYC";//代币符号
     uint8 private constant DECIMALS = 8;//小数位
-    uint256 private constant INITIAL_SUPPLY = 21E17; // 代币总量 10 billion
+    uint256 private constant INITIAL_SUPPLY = 21E16; // 代币总量 21 billion
 
     constructor () public ERC20Detailed(NAME, SYMBOL, DECIMALS) {
         _mint(msg.sender, INITIAL_SUPPLY);
